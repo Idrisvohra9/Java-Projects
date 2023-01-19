@@ -1,0 +1,55 @@
+
+// Overview:
+
+Java AWT (Abstract Window Toolkit) is an API to develop Graphical User Interface (GUI) or windows-based applications in Java.
+
+Java AWT components are platform-dependent i.e. components are displayed according to the view of operating system. AWT is heavy weight i.e. its components are using the resources of underlying operating system (OS).
+
+The java.awt package provides classes for AWT API such as TextField, Label, TextArea, RadioButton, CheckBox, Choice, List etc.
+
+The AWT tutorial will help the user to understand Java GUI programming in simple and easy steps.
+
+Components
+All the elements like the button, text fields, scroll bars, etc. are called components. In Java AWT, there are classes for each component as shown in above diagram. In order to place every component in a particular position on a screen, we need to add them to a container.
+
+Container
+The Container is a component in AWT that can contain another components like buttons, textfields, labels etc. The classes that extends Container class are known as container such as Frame, Dialog and Panel.
+
+It is basically a screen where the where the components are placed at their specific locations. Thus it contains and controls the layout of components.
+
+Note: A container itself is a component (see the above diagram), therefore we can add a container inside container.
+
+here are four types of containers in Java AWT:
+
+    Window
+
+    Panel
+
+    Frame
+
+    Dialog
+
+    
+Window
+
+The window is the container that have no borders and menu bars. You must use frame, dialog or another window for creating a window. We need to create an instance of Window class to create this container.
+
+Panel
+
+The Panel is the container that doesn't contain title bar, border or menu bar. It is generic container for holding the components. It can have other components like button, text field etc. An instance of Panel class creates a container, in which we can add components.
+
+Frame
+
+The Frame is the container that contain title bar and border and can have menu bars. It can have other components like button, text field, scrollbar etc. Frame is most widely used container while developing an AWT application.
+
+Useful Methods of Component Class:
+
+        Method	                          |                 Description
+
+public void add(Component c)	          |  Inserts a component on this component.
+
+public void setSize(int width,int height) |  	Sets the size (width and height) of the component.
+
+public void setLayout(LayoutManager m)	  |  Defines the layout manager for the component.
+
+public void setVisible(boolean status)	  |  Changes the visibility of the component,by default false.
